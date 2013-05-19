@@ -1,6 +1,14 @@
-[CustomListItem@SelectableView+BoxLayout]:
-    size_hint_y: ctx.size_hint_y
-    height: ctx.height
-    ListItemButton:
-        text: ctx.text
-        is_selected: ctx.is_selected
+#:kivy 1.0.9
+
+<Menu>:    
+    canvas:
+        Rectangle:
+            pos: 5, self.height-108
+            size: self.width-10, 10
+            
+    Label:
+        font_size: 48  
+        center_x: root.width / 2
+        top: root.top - 10
+        text: "The Old Fountain"
+        
