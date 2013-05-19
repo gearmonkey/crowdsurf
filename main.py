@@ -17,14 +17,7 @@ Factory.register('ListItemButton', cls=ListItemButton)
 # [TODO] SelectableView is subclassed here, yet, it is necessary to add the
 #        index property in the template. Same TODO in list_cascade_images.py.
 
-Builder.load_string('''
-[CustomListItem@SelectableView+BoxLayout]:
-    size_hint_y: ctx.size_hint_y
-    height: ctx.height
-    ListItemButton:
-        text: ctx.text
-        is_selected: ctx.is_selected
-''')
+Builder.load_file('menu.kv')
 
 
 class MainView(GridLayout):
